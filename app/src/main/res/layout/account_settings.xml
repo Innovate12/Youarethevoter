@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.percent.PercentRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/register"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="app.com.neil.youarethevoter.MainActivity"
+    android:background="@color/yellow">
+
+    <TextView android:id="@+id/tvAccountSettingsText"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_widthPercent="80%"
+        app:layout_marginTopPercent="15%"
+        android:layout_centerHorizontal="true"
+        android:text="@string/accountsetting"
+        android:textSize="15sp"
+        android:textStyle="bold"/>
+
+    <TextView android:id="@+id/tvASName"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_widthPercent="80%"
+        app:layout_marginTopPercent="10%"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/tvAccountSettingsText"
+        android:text="@string/fullname"
+        android:textSize="10sp"
+        android:textStyle="bold"/>
+
+    <EditText android:id="@+id/etASName"
+        android:layout_below="@+id/tvASName"
+        android:inputType="text"
+        app:layout_widthPercent="80%"
+        app:layout_heightPercent="7%"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="8dp"
+        android:paddingLeft="10dp"
+        android:background="@drawable/editviewsettings"
+        android:editable="false"/>
+
+    <TextView android:id="@+id/tvASDOB"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_widthPercent="25%"
+        app:layout_marginTopPercent="5%"
+        android:layout_below="@+id/etASName"
+        android:text="@string/dob"
+        android:textSize="10sp"
+        android:textStyle="bold"
+        android:layout_alignStart="@+id/tvASName"/>
+
+    <EditText android:id="@+id/etASDOB"
+        android:layout_below="@+id/tvASDOB"
+        android:inputType="text"
+        app:layout_widthPercent="25%"
+        app:layout_heightPercent="7%"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="8dp"
+        android:background="@drawable/editviewsettings"
+        android:layout_alignStart="@+id/tvASName"
+        android:hint="@string/dob_hint"
+        android:textSize="12sp"
+        android:textAlignment="center"
+        android:editable="false"/>
+
+    <TextView android:id="@+id/tvASLocation"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_widthPercent="50%"
+        app:layout_marginTopPercent="5%"
+        android:layout_below="@+id/etASName"
+        android:text="@string/location"
+        android:textSize="10sp"
+        android:textStyle="bold"
+        android:layout_alignEnd="@+id/tvASName"/>
+
+    <Spinner android:id="@+id/spinnerASLocationLabel"
+        android:entries="@array/country_label"
+        app:layout_widthPercent="50%"
+        app:layout_heightPercent="7%"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="8dp"
+        android:layout_below="@+id/tvASLocation"
+        android:layout_alignEnd="@+id/tvASName"
+        android:background="@drawable/editviewsettings"
+        android:spinnerMode="dropdown"
+        android:visibility="invisible"/>
+    <Spinner android:id="@+id/spinnerASLocation"
+        android:entries="@array/country_arrays"
+        app:layout_widthPercent="50%"
+        app:layout_heightPercent="7%"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="8dp"
+        android:layout_below="@+id/tvASLocation"
+        android:layout_alignEnd="@+id/tvASName"
+        android:background="@drawable/editviewsettings"
+        android:spinnerMode="dropdown"
+        android:clickable="false"/>
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/spinnerASLocation"
+        android:layout_alignBottom="@+id/spinnerASLocation"
+        android:layout_alignRight="@id/spinnerASLocation"
+        android:layout_marginRight="10dp"
+        android:src="@drawable/downarrow_icon"/>
+
+
+    <Button android:id="@+id/editASButton"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_widthPercent="80%"
+        app:layout_marginTopPercent="10%"
+        android:layout_centerHorizontal="true"
+        android:text="@string/editdetail"
+        android:layout_below="@+id/etASDOB"
+        android:background="@drawable/textviewbg"
+        android:onClick="clickEvent"/>
+
+    <Button android:id="@+id/updateASButton"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_widthPercent="80%"
+        app:layout_marginTopPercent="10%"
+        android:layout_centerHorizontal="true"
+        android:text="@string/updatedetail"
+        android:textColor="#ffffff"
+        android:layout_below="@+id/etASDOB"
+        android:background="@drawable/textviewupdatebg"
+        android:visibility="invisible"
+        android:onClick="clickEvent"/>
+
+</android.support.percent.PercentRelativeLayout>

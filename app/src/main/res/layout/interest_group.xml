@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.percent.PercentRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="app.com.neil.youarethevoter.MainActivity">
+
+    <ImageView
+        android:id="@+id/ivLogo"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_heightPercent="20%"
+        android:layout_marginTop="2dp"
+        android:layout_marginBottom="20dp"
+        android:src="@drawable/logo" />
+
+    <TextView android:id="@+id/tvWelcome"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ivLogo"
+        app:layout_widthPercent="55%"
+        android:layout_centerHorizontal="true"
+        android:textAlignment="center"
+        app:layout_marginBottomPercent="3%"
+        android:textSize="20sp"
+        android:textStyle="bold"/>
+
+    <TextView android:id="@+id/tvText4"
+        android:text="@string/text4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvWelcome"
+        app:layout_widthPercent="70%"
+        android:layout_centerHorizontal="true"
+        android:textAlignment="center"
+        android:layout_marginBottom="5dp"
+        android:textSize="10sp"
+        android:textStyle="bold"/>
+
+    <TextView android:id="@+id/tvText5"
+        android:text="@string/text5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvText4"
+        app:layout_widthPercent="55%"
+        android:layout_centerHorizontal="true"
+        android:textAlignment="center"
+        app:layout_marginBottomPercent="3%"
+        android:textSize="10sp"
+        android:textStyle="italic"/>
+
+    <GridView android:id="@+id/gridInterestGroup"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_widthPercent="80%"
+        app:layout_heightPercent="45%"
+        android:layout_below="@id/tvText5"
+        android:padding="10dp"
+        android:verticalSpacing="10dp"
+        android:horizontalSpacing="10dp"
+        android:numColumns="auto_fit"
+        app:layout_marginBottomPercent="2%"
+        android:layout_centerHorizontal="true"/>
+
+    <Button android:id="@+id/continueVote"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/gridInterestGroup"
+        android:text="@string/registercomplete"
+        android:layout_toRightOf="@+id/login"
+        app:layout_widthPercent="50%"
+        android:background="#2b7de3"
+        android:layout_centerHorizontal="true"
+        android:onClick="clickContinueVote"/>
+</android.support.percent.PercentRelativeLayout>

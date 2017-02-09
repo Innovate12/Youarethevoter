@@ -1,0 +1,46 @@
+<resources>
+    <string name="app_name">YouAreTheVoter</string>
+    <string name="username">Username</string>
+    <string name="password">Password</string>
+    <string name="login">Login</string>
+    <string name="register">Register</string>
+    <string name="register2">Register (Page 1)</string>
+    <string name="registerText">Don\'t have an account? &lt;u>%1$s&lt;/u></string>
+    <string name="signup">Sign Up</string>
+    <string name="signupText">Sign up</string>
+    <!--string name="text1">Have a voice in the decisions that directly affect you</string-->
+    <string name="text1">Click Topic, Click Question, Vote &amp; Share. Feedback to r.o.finn@gmail.com</string>
+    <string name="text2">We post questions that are on local council and Dail agendas so you can vote on issues that are being discussed at local, national and EU Level.</string>
+    <string name="fullname">Full Name</string>
+    <string name="dob">Date of birth</string>
+    <string name="dob_hint">DD/MM/YYYY</string>
+    <string name="location">Location</string>
+    <string name="emailaddress">Email Address</string>
+    <string name="registercomplete">Register Complete</string>
+    <string name="textwelcome">Welcome abc</string>
+    <string name="text3">Use at least 6 characters with both letters and numbers</string>
+    <string name="text4">Please tell us your interests are for the below options</string>
+    <string name="text5">Hint: you can choose more than one:)</string>
+    <string name="clickheretext">Are you a member? &lt;u>%1$s&lt;/u></string>
+    <string name="clickforlogin">Click here to login</string>
+    <string name="button_yes">YES</string>
+    <string name="button_no">NO</string>
+    <string name="accountsetting">Account settings</string>
+    <string name="interestgroupsetting">Update your interest groups</string>
+    <string name="termssetting">Terms and conditions</string>
+    <string name="logout">Logout</string>
+    <string name="editdetail">Edit details</string>
+    <string name="updatedetail">Update details</string>
+    <string-array name="country_label">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+    </string-array>
+    <string-array name="country_arrays">
+        <item>Connacht</item>
+        <item>Leinster</item>
+        <item>Munster</item>
+        <item>Ulster</item>
+    </string-array>
+</resources>

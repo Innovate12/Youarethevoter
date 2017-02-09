@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.percent.PercentRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="app.com.neil.youarethevoter.MainActivity">
+
+    <ScrollView android:id="@+id/svQuestVoteText"
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        app:layout_heightPercent="40%"
+        app:layout_marginBottomPercent="5%"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="40dp"
+        android:scrollbars="vertical"
+        android:fillViewport="true">
+        <TextView android:id="@+id/tvQuestVoteText"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            app:layout_heightPercent="20%"
+            android:textSize="25sp"
+            android:layout_margin="20dp"/>
+    </ScrollView>
+
+    <TextView android:id="@+id/tvShare"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/svQuestVoteText"
+        android:layout_centerHorizontal="true"
+        android:textSize="10sp"
+        android:layout_margin="5dp"
+        android:textStyle="bold"
+        android:text="Share your opinion"/>
+
+    <ImageView
+        android:id="@+id/ivTwitterLogo"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_heightPercent="10%"
+        android:layout_below="@+id/tvShare"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="30dp"
+        android:src="@drawable/twitterlogo" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ivTwitterLogo"
+        android:id="@+id/tvThanks"
+        android:layout_centerHorizontal="true"
+        android:textSize="12sp"
+        android:layout_margin="5dp"
+        android:textStyle="bold"
+        android:text="Thanks, your vote has been registered"/>
+
+    <TextView
+        android:id="@+id/tvYes"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvThanks"
+        app:layout_widthPercent="80%"
+        app:layout_heightPercent="10%"
+        app:layout_marginLeftPercent="5%"
+        android:layout_marginRight="2dp"
+        android:padding="5dp"
+        android:textAlignment="center"
+        android:background="@color/yellow"/>
+
+    <TextView
+        android:id="@+id/tvNo"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_widthPercent="10%"
+        app:layout_heightPercent="10%"
+        android:layout_marginLeft="2dp"
+        android:padding="5dp"
+        android:layout_below="@+id/tvThanks"
+        android:layout_toRightOf="@+id/tvYes"
+        app:layout_marginRightPercent="5%"
+        android:textAlignment="center"
+        android:background="#2a7de3"/>
+
+</android.support.percent.PercentRelativeLayout>
